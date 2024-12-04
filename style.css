@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(20, 19, 23);
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+	max-width: 1000px;
+	margin: auto;
+	width: 100%
+}
+/*Activité*/
+.card{
+    background-color: rgb(40, 40, 40);
+	width: 300px;
+	box-shadow: 4px 4px 12px #00000025;
+	padding: 8px;
+    color: #fff;
+}
+.card img {
+	display: block;
+	width: 100%
+ 
+}
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Jolly Lodger", system-ui;
+    font-size: 38px;
+}
+.card p {
+    color: #ececec;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.card a {
+    color: #fff;
+    background-color: #0f023b;
+    padding: 10px;
+    border-radius: 10px 10px;
+    margin-bottom: 20px;
+}

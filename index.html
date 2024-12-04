@@ -17,10 +17,9 @@
         <img src="assets/logomieu.png" alt="">
         <nav class="flex spaceBetween ">
             <ul class="width50 flex spaceBetween">
-                <li><a href="">Activités</a></li>
-                <li><a href="">Avis</a></li>
-                <li><a href="">Localisation</a></li>
-                <li><a href="">Engagement</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#engagements">Engagements</a></li>
+                <li><a href="#localisation">Localisation</a></li>
             </ul>
         </nav>
         <a href="">Contact</a>
@@ -30,20 +29,27 @@
         <!-- hero -->
         <section class="container marginTopHero">
             <div class="flex alignItem ">
+                
                 <div class="widthHero bgHero">
-                    <h2>De<span class="h1Span">h</span>ors !</h2>
+                    <h2>De<span>h</span>ors !</h2>
                     <h1>Escape Game Paris</h1>
                     <p class="pHero">Découvrez l'aventure ultime avec Dehors!, votre destination d'escape game à Paris.
                     </p>
-                    <a href="" class="btnHero"><img src="assets/plot1.png" alt="" class="imgBtnHero ">Réservez votre
+                    <a href="#aventures" class="btnHero alignItem"><img src="assets/plot-blanc.png" alt=""
+                            class="imgBtnHero ">Réservez
+                        votre
                         aventure</a>
                 </div>
-                <img src="assets/detective4.png" class="widthHero imgHero" alt="photo de detective">
+                <div class="relative">
+                 <img src="assets/detective4.png" class="widthHero imgHero alignItem" alt="photo de detective">
+                <div class="lueur"></div>   
+                </div>
+                
             </div>
         </section>
         <!-- Activité -->
-        <section class="container">
-            <h3>Nos aventures</h3>
+        <section class="container scrollTop">
+            <h3 class="grosTitre" id="aventures">Nos aventures</h3>
             <div id="containerCard" class="flex spaceBetween">
                 <!-- 
             <div class="card">
@@ -59,9 +65,10 @@
         </section>
         <!-- engagement -->
         <section class="marginEngagement">
+            <div class="imagedeFond"></div>
             <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000" class="flex alignItem centrer">
                 <img src="assets/plot1.png" alt="" class="plotEngagement">
-                <h4>Énigmes captivantes <br> pour des expériences uniques</h4>
+                <h4 id="engagements">Énigmes captivantes <br> pour des expériences uniques</h4>
             </div>
             <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000"
                 class="flex alignItem centrer italic">
@@ -74,11 +81,12 @@
             </div>
         </section>
         <!-- avis -->
-        <section class="container">
-            <h3>Ce que pense nos aventuriers</h3>
-            
-            <div class="flex spaceBetween" id="containerAvis">
-                <!--  
+        <section class="bgBande">
+            <div class="container">
+                <h3 class="grosTitre" id="avis">Ce que pense nos aventuriers</h3>
+
+                <div class="flex spaceBetween" id="containerAvis">
+                    <!--  
                 <div class="cardAvis marginAvis">
                     <div class="flex alignItem">
                         <img src="assets/avis_photo.jpg" alt="">
@@ -95,16 +103,20 @@
                         enim qui vitae eligendi.</p>
                 </div>
                 -->
+                </div>
             </div>
         </section>
         <!-- localisation -->
         <section class="container">
-            <h3>Où nous trouver</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d84020.96119695695!2d2.2957497069645076!3d48.84571834033301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47e6720fe3847bc5%3A0xbec23b5d4f1f8028!2s46%20Avenue%20Daumesnil%2C%2075012%20Paris!3m2!1d48.8457477!2d2.3781501!5e0!3m2!1sfr!2sfr!4v1733322391707!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iFrameScale"></iframe>
+            <h3 class="grosTitre" id="localisation">Où nous trouver</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d84020.96119695695!2d2.2957497069645076!3d48.84571834033301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47e6720fe3847bc5%3A0xbec23b5d4f1f8028!2s46%20Avenue%20Daumesnil%2C%2075012%20Paris!3m2!1d48.8457477!2d2.3781501!5e0!3m2!1sfr!2sfr!4v1733322391707!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="iFrameScale"></iframe>
         </section>
         <!-- contact -->
-         <section class="container">
-            <h3>Nous contacter</h3>
+        <section class="container">
+            <h3 class="grosTitre" id="contact">Nous contacter</h3>
             <div class="flex spaceBetween">
                 <i class="fa-solid fa-envelope"></i>
                 <i class="fa-solid fa-phone"></i>
@@ -112,9 +124,12 @@
                 <i class="fa-brands fa-instagram"></i>
             </div>
 
-         </section>
+        </section>
     </main>
     <footer>
+        <div class="bgFooter">
+            <p class="paraFooter">mention légal</p>
+        </div>
     </footer>
     <script src="app.js"></script>
     <script>

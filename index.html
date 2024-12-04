@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dehors! - Escape Game Paris</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
     <!-- header avec logo -->
-    <header>
-        <img src="" alt="">
-        <nav>
-            <ul>
+    <header class="bgHeader flex alignItem spaceBetween">
+        <img src="assets/logomieu.png" alt="">
+        <nav class="flex ">
+            <ul class="width50 flex spaceBetween">
                 <li><a href="">Activités</a></li>
                 <li><a href="">Avis</a></li>
                 <li><a href="">Localisation</a></li>
@@ -23,20 +25,24 @@
     <!-- corps du site -->
     <main>
         <!-- hero -->
-        <section class="container">
-            <div>
-                <div>
-                    <h2>Dehors !</h2>
+        <section class="container marginTopHero">
+            <div class="flex alignItem ">
+                <div class="widthHero bgHero">
+                    <h2>De<span class="h1Span">h</span>ors !</h2>
                     <h1>Escape Game Paris</h1>
-                    <p>Découvrez l'aventure ultime avec Dehors!, votre destination d'escape game à Paris</p>
-                    <a href="">Réservez votre aventure</a>
+                    <p class="pHero">Découvrez l'aventure ultime avec Dehors!, votre destination d'escape game à Paris.
+                    </p>
+                    <a href="" class="btnHero"><img src="assets/plot1.png" alt="" class="imgBtnHero ">Réservez votre
+                        aventure</a>
                 </div>
-                <img src="assets/detective.png" alt="photo de detective">
+                <img src="assets/detective4.png" class="widthHero imgHero" alt="photo de detective">
             </div>
         </section>
         <!-- Activité -->
         <section class="container">
             <h3>Nos aventures</h3>
+            <div id="containerCard" class="flex spaceBetween">
+                <!-- 
             <div class="card">
                 <img src="https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/escape-game/mystere-du-manoir.webp" alt="image en lien avec l'aventure">
                 <div>
@@ -45,9 +51,49 @@
                     <a href="">Réservez !</a>
                 </div>
             </div>
+             -->
+            </div>
+        </section>
+        <!-- engagement -->
+        <section class="marginEngagement">
+            <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000" class="flex alignItem centrer">
+                <img src="assets/plot1.png" alt="" class="plotEngagement">
+                <h4>Énigmes captivantes <br> pour des expériences uniques</h4>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000"
+                class="flex alignItem centrer italic">
+                <img src="assets/plot2.png" alt="" class="plotEngagement ">
+                <h4 class="">Maîtres du jeu passionnés <br> pour vous guiders</h4>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="2000" class="flex alignItem centrer">
+                <img src="assets/plot3.png" alt="" class="plotEngagement">
+                <h4>Ambiances immersives dans des décors <br> soigneusement conçus</h4>
+            </div>
+        </section>
+        <!-- avis -->
+        <section class="container">
+            <h3>Ce que pense nos aventuriers</h3>
+            <div class="cardAvis marginAvis">
+                <div class="flex alignItem">
+                    <img src="assets/avis_photo.jpg" alt="">
+                    <div class="width45">
+                        <h5>NOm delapersonne</h5>
+                        <p>etoile</p>
+                    </div>
+                </div>
+                <h5>Titre de l'aventure</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus vel quasi
+                    aspernatur
+                    consequuntur cum explicabo dolorum eum quam hic, unde, minima repellat magnam? Temporibus
+                    exercitationem
+                    enim qui vitae eligendi.</p>
+            </div>
         </section>
     </main>
     <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

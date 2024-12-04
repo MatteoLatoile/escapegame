@@ -43,18 +43,16 @@ function afficher2(temoignage){
                 <div class="flex alignItem">
                     <img src="assets/avis_photo.jpg" alt="">
                     <div class="width45">
-                        <h5>NOm delapersonne</h5>
-                        <p>etoile</p>
+                        <h5>${prenom}</h5>
+                        <p>${rate}</p>
                     </div>
                 </div>
-                <h5>Titre de l'aventure</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus vel quasi
-                    aspernatur
-                    consequuntur cum explicabo dolorum eum quam hic, unde, minima repellat magnam? Temporibus
-                    exercitationem
-                    enim qui vitae eligendi.</p>
+                <h5>${titreXP}</h5>
+                <p>${com}</p>
             </div>`
 
+            let affichageAvis = document.querySelector("#containerAvis")
+            affichageAvis.innerHTML += templateAvis
     });
     
 }

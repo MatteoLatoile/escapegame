@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 
 <body>
     <!-- header avec logo -->
     <header class="bgHeader flex alignItem spaceBetween">
         <img src="assets/logomieu.png" alt="">
-        <nav class="flex ">
+        <nav class="flex spaceBetween ">
             <ul class="width50 flex spaceBetween">
                 <li><a href="">Activités</a></li>
                 <li><a href="">Avis</a></li>
                 <li><a href="">Localisation</a></li>
+                <li><a href="">Engagement</a></li>
             </ul>
         </nav>
+        <a href="">Contact</a>
     </header>
     <!-- corps du site -->
     <main>
@@ -73,23 +76,46 @@
         <!-- avis -->
         <section class="container">
             <h3>Ce que pense nos aventuriers</h3>
-            <div class="cardAvis marginAvis">
-                <div class="flex alignItem">
-                    <img src="assets/avis_photo.jpg" alt="">
-                    <div class="width45">
-                        <h5>NOm delapersonne</h5>
-                        <p>etoile</p>
+            
+            <div class="flex spaceBetween" id="containerAvis">
+                <!--  
+                <div class="cardAvis marginAvis">
+                    <div class="flex alignItem">
+                        <img src="assets/avis_photo.jpg" alt="">
+                        <div class="width45">
+                            <h5>NOm delapersonne</h5>
+                            <p>etoile</p>
+                        </div>
                     </div>
+                    <h5>Titre de l'aventure</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus vel quasi
+                        aspernatur
+                        consequuntur cum explicabo dolorum eum quam hic, unde, minima repellat magnam? Temporibus
+                        exercitationem
+                        enim qui vitae eligendi.</p>
                 </div>
-                <h5>Titre de l'aventure</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus vel quasi
-                    aspernatur
-                    consequuntur cum explicabo dolorum eum quam hic, unde, minima repellat magnam? Temporibus
-                    exercitationem
-                    enim qui vitae eligendi.</p>
+                -->
             </div>
         </section>
+        <!-- localisation -->
+        <section class="container">
+            <h3>Où nous trouver</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d84020.96119695695!2d2.2957497069645076!3d48.84571834033301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47e6720fe3847bc5%3A0xbec23b5d4f1f8028!2s46%20Avenue%20Daumesnil%2C%2075012%20Paris!3m2!1d48.8457477!2d2.3781501!5e0!3m2!1sfr!2sfr!4v1733322391707!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iFrameScale"></iframe>
+        </section>
+        <!-- contact -->
+         <section class="container">
+            <h3>Nous contacter</h3>
+            <div class="flex spaceBetween">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+         </section>
     </main>
+    <footer>
+    </footer>
     <script src="app.js"></script>
     <script>
         AOS.init();

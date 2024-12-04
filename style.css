@@ -17,6 +17,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
     background-color: rgb(9, 9, 11);
     overflow-x: hidden;
 }
@@ -133,11 +134,12 @@ h2 span {
 
 h3 {
     margin-top: 100px;
+    margin-bottom: 30px;
     color: #fff;
     font-family: "Jolly Lodger", system-ui;
     font-size: 50px;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #9a9a9a;
+    -webkit-text-stroke: 1px #c5c5c5;
 
 }
 
@@ -157,6 +159,7 @@ h3 {
 .card h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: inline-block;
     font-family: "Jolly Lodger", system-ui;
     font-size: 40px;
     -webkit-text-fill-color: transparent;
@@ -174,7 +177,8 @@ h3 {
     background-color: #0f023b;
     padding: 10px;
     border-radius: 10px 10px;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 /*engagement*/
@@ -211,20 +215,26 @@ h4 {
 	box-shadow: 4px 4px 12px #00000025;
 	border-radius: 30px 30px;
 	padding: 16px;
+    
+    
 }
+
 .cardAvis img {
 	display: block;
 	width: 100%;
     width: 45%;
     border-radius: 60px;
-    margin-right:10px ;
+    margin-right: 10px ;
     opacity: 50%;
+
 }
 .width45{
     width: 50%;
 }
 .cardAvis p {
     color: white;
+    font-style: italic;
+    font-size: 14px;
 
 }
 h5{
@@ -235,4 +245,13 @@ h5{
 }
 .marginAvis{
     margin-top: 30px;
+}
+/*ou nous trouver*/
+.iFrameScale{
+    width: 100%;
+}
+i{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
 }

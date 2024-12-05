@@ -9,16 +9,19 @@
   ],
   "activites": [
     {
+      "id" : 1,
       "nom": "Mystère du Manoir",
       "description": "Explorez un manoir mystérieux rempli d'énigmes et de mystères. Parviendrez-vous à résoudre les énigmes et à vous échapper avant que le temps ne s'écoule ?",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/escape-game/mystere-du-manoir.webp"
     },
     {
+      "id" : 2,
       "nom": "Évasion dans l'Espace",
       "description": "Voyagez dans l'espace et relevez des défis intergalactiques. Une aventure cosmique qui mettra à l'épreuve votre esprit d'équipe et votre ingéniosité.",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/escape-game/evasion-dans-l-espace.webp"
     },
     {
+      "id" : 3,
       "nom": "Mission Secrète: Paris",
       "description": "Plongez dans une mission secrète au cœur de Paris. Résolvez des énigmes pour déjouer les complots et accomplir votre mission dans la Ville Lumière.",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/escape-game/mission-secrete-paris.webp"

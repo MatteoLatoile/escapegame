@@ -142,11 +142,33 @@ header img {
     align-items: center;
 }
 .bgDivHero{
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 79%, rgba(255,183,0,1) 100%); 
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.441);
+    background-color: #000000;
 }
 .imgBtnHero{
     width: 2px;
     margin-right: 6px;
+}
+
+.grosTitre {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+
+}
+
+i{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+i:hover{
+    color: #ffb700;
+    font-size: 32px;
+    margin-bottom: 30px;
+    transition: 0.3s;
 }

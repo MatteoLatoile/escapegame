@@ -23,7 +23,7 @@ function afficher(activite) {
                 <div>
                     <h3>${nom}</h3>
                     <p>${desc}</p>
-                    <a href="aventure.html" target="_blank">Réservez !</a>
+                    <a href="aventure.html?id=${act.id}" target="_blank">Réservez !</a>
                 </div>
             </div>`
         let affichage = document.querySelector("#containerCard")
@@ -68,6 +68,11 @@ devient une etoile vide je crée donc 2 boites qui va contenir mes étoile vide 
 }
 function afficher3(hero) {
     hero.forEach(elementHero => {
+
+        // url
+        let url = new URL("http://127.0.0.1:5500/aventure.html?id=2")
+        let elementUrl = url.pathname;
+        
         //mes vars pour les integrer dans le template
         let mission = elementHero.nomHero
         let descAventure = elementHero.descHero
@@ -83,7 +88,6 @@ function afficher3(hero) {
                     aventure</a>
             </div>
         </div>`
-        console.Log(mission)
         //let affichageAventure = document.querySelector("#containerAventure")
         //affichageAventure.innerHTML += templateAventure
 

@@ -8,6 +8,7 @@ fetch('data.json')
         console.log(donnee.activites);
         afficher(donnee.activites)
         afficher2(donnee.temoignages)
+        afficher3(donnee.heroActivite)
     })
 //role : afficher
 // parametre
@@ -41,7 +42,7 @@ function afficher2(temoignage) {
         let etoilePleine = "★"
         let etoileVide = "☆"
         let rateEtoile = etoilePleine.repeat(rate)
-        let rateEtoileV = etoileVide.repeat(5-rate)
+        let rateEtoileV = etoileVide.repeat(5 - rate)
 
         let templateAvis = `<div class="cardAvis marginAvis">
                 <div class="flex alignItem">
@@ -54,15 +55,39 @@ function afficher2(temoignage) {
                 <h5>${titreXP}</h5>
                 <p>${com}</p>
             </div>`
-            /*il faut que mon nombre sur 5 dans chaque avis ce traduise en étoile selon le nombre sur et le nombre d'étoile manquant
+        /*il faut que mon nombre sur 5 dans chaque avis ce traduise en étoile selon le nombre sur et le nombre d'étoile manquant
 devient une etoile vide je crée donc 2 boites qui va contenir mes étoile vide et remplisle nombre d'etoile plaine correspondra a ma not et le nombre d'etoile vide sera le resultat de ma note (donc le nombre d'etoile) moins 5 (qui me donnera donc le nombre d'etoile vide)  */
 
-        
+
 
         let affichageAvis = document.querySelector("#containerAvis")
         affichageAvis.innerHTML += templateAvis
     });
 
+    // fonction pour remplacer des element de template du hero aventure
+}
+function afficher3(hero) {
+    hero.forEach(elementHero => {
+        //mes vars pour les integrer dans le template
+        let mission = elementHero.nomHero
+        let descAventure = elementHero.descHero
+        let imgAventure = elementHero.imgFond
+        let templateAventure = `<div class="hero">
+            <img src="${imgAventure}"
+                alt="">
+            <div class="bgDivHero">
+                <h2>${mission}</h2>
+                <p>${descAventure}</p>
+                <a href="#aventures" class="btnHero alignItem">Réservez
+                    votre
+                    aventure</a>
+            </div>
+        </div>`
+        console.Log(mission)
+        //let affichageAventure = document.querySelector("#containerAventure")
+        //affichageAventure.innerHTML += templateAventure
+
+    });
 }
 
 

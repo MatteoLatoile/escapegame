@@ -10,26 +10,32 @@
     display: flex;
     flex-wrap: wrap;
 }
-main{
+
+main {
     margin-top: 100px;
 }
+
 .alignItem {
     align-items: center;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     background-color: rgb(9, 9, 11);
     overflow-x: hidden;
-    
-    
+
+
 }
-.scrollTop{
+
+.scrollTop {
     scroll-margin-top: 140px;
 }
+
 .spaceBetween {
     justify-content: space-between;
 }
@@ -75,7 +81,8 @@ header {
 header a {
     color: #919191;
 }
-header a:hover{
+
+header a:hover {
     color: #ffffff;
     transition: 0.3s;
 }
@@ -83,4 +90,63 @@ header a:hover{
 header img {
     width: 5%;
 }
+
 /*Hero*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+}
+.hero div {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 64px;
+    border-radius: 30px;}
+
+.hero h2{
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.hero p{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.btnHero{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #ffb700;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 210px;
+    display: flex;
+    align-items: center;
+}
+.bgDivHero{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 79%, rgba(255,183,0,1) 100%); 
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.441);
+}
+.imgBtnHero{
+    width: 2px;
+    margin-right: 6px;
+}

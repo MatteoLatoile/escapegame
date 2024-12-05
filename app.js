@@ -66,33 +66,7 @@ devient une etoile vide je crée donc 2 boites qui va contenir mes étoile vide 
 
     // fonction pour remplacer des element de template du hero aventure
 }
-function afficher3(hero) {
-    hero.forEach(elementHero => {
 
-        // url
-        let url = new URL("http://127.0.0.1:5500/aventure.html?id=2")
-        let elementUrl = url.pathname;
-        
-        //mes vars pour les integrer dans le template
-        let mission = elementHero.nomHero
-        let descAventure = elementHero.descHero
-        let imgAventure = elementHero.imgFond
-        let templateAventure = `<div class="hero">
-            <img src="${imgAventure}"
-                alt="">
-            <div class="bgDivHero">
-                <h2>${mission}</h2>
-                <p>${descAventure}</p>
-                <a href="#aventures" class="btnHero alignItem">Réservez
-                    votre
-                    aventure</a>
-            </div>
-        </div>`
-        //let affichageAventure = document.querySelector("#containerAventure")
-        //affichageAventure.innerHTML += templateAventure
-
-    });
-}
 
 
 /*il faut que mon nombre sur 5 dans chaque avis ce traduise en étoile selon le nombre sur et le nombre d'étoile manquant

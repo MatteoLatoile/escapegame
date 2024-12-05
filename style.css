@@ -96,9 +96,8 @@ header img {
 }
 
 .imgHero {
-    width: 40%;
+    width: 90%;
     margin-left: 60px;
-    opacity: 70%;
     transform: scaleX(-1);
 }
 
@@ -137,6 +136,21 @@ h1 {
     align-items: center;
 
 }
+.btnHero:hover {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #ffb700a0;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 212px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+
+}
 
 .imgBtnHero {
     width: 10%;
@@ -160,13 +174,15 @@ h2 span {
 }
 .lueur{
     background-color: #ffb700;
-    filter: blur(24px);
-    height: 100px;
-    width: 100px;
+    filter: blur(150px);
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    left: 75%;
-    top: 50%;
+    left: 60%;
+    top: 10%;
     position: absolute;
+    z-index: -1;
+    opacity: 70%;
 }
 .grosTitre {
     margin-top: 100px;
@@ -216,6 +232,16 @@ h2 span {
     margin-bottom: 5px;
     font-weight: 900;
 }
+.card a:hover{
+    color: #000000;
+    background-color: #ffb7009c;
+    padding: 10px 20px; 
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 900;
+    transition: 0.3s;
+}
 
 /*engagement*/
 .centrer {
@@ -233,7 +259,7 @@ h4 {
     font-style: italic;
 }
 .bgBande{
-    background-image: url(assets/notcross.png);
+    background-image: url(assets/bandephotopea\ \(2\).png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -294,13 +320,20 @@ h5{
 i{
     color: white;
     font-size: 30px;
+    margin-bottom: 60px;
+}
+i:hover{
+    color: #ffb700;
+    font-size: 32px;
     margin-bottom: 30px;
+    transition: 0.3s;
 }
 /* footer*/
-.bgFooter{
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     background-color: #000000;
-    width: 100%;
-}
-.paraFooter{
-    color: white;
-}
+    color: #fff;
+  }
+  

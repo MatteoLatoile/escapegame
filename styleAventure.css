@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Meow+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+main{
+    margin-top: 100px;
+}
+.alignItem {
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: rgb(9, 9, 11);
+    overflow-x: hidden;
+    
+    
+}
+.scrollTop{
+    scroll-margin-top: 140px;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%
+}
+
+.width50 {
+    width: 500px;
+}
+
+.widthHero {
+    width: 50%;
+}
+
+/*header*/
+.bgHeader {
+    background-color: black;
+
+}
+
+header {
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+
+header a {
+    color: #919191;
+}
+header a:hover{
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+header img {
+    width: 5%;
+}
+/*Hero*/

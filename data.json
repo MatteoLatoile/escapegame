@@ -43,5 +43,23 @@
       "commentaire": "La Mission Secrète: Paris chez Dehors! était une expérience mémorable. Les énigmes étaient intelligentes, et l'intrigue nous a tenus en haleine. Recommandé à tous les amateurs d'escape game !",
       "note": 5
     }
+  ],
+  "heroActivite" : [
+    {
+      "imgFond": "https://cdn.openart.ai/stable_diffusion/a838f5f1a20966b463442b5edf42e29a38f98ea1_2000x2000.webp",
+      "nomHero": "Mission Secrète: Paris",
+      "descHero" : "Dans cet escape game, les joueurs plongent dans une mission secrète à Paris, où ils incarnent des détectives intrépides chargés de résoudre une enquête mystérieuse. L'histoire commence dans un bureau secret dissimulé dans un quartier historique de la capitale. Des indices cryptés, des documents confidentiels et des objets énigmatiques pointent vers un complot qui pourrait bouleverser la sécurité nationale. Au fil des énigmes à résoudre, les joueurs devront déjouer des pièges sophistiqués et déchiffrer des messages codés pour empêcher une catastrophe imminente. L'ambiance feutrée des lieux, éclairée par des néons et des lampes à pétrole, recrée une atmosphère de thriller noir, avec une touche de Paris dans les années 50. Chaque détail, du mobilier aux objets de la pièce, ajoute à l'immersion dans cette aventure palpitante au cœur de la Ville Lumière."
+    },
+    {
+      "imgFond": "https://cdn.futura-sciences.com/sources/XMM-Newton_ESA_D._Ducros_.jpg",
+      "nomHero": "Évasion dans l'Espace",
+      "descHero" : "Dans cet escape game spatial, les joueurs sont envoyés en mission à bord d’une station spatiale isolée, flottant au-delà des frontières de l'atmosphère terrestre. Leur objectif : résoudre une série de mystères liés à une défaillance technologique qui menace la station et son équipage. En explorant les différents modules de la station, les joueurs devront déchiffrer des codes extraterrestres, réparer des systèmes vitaux et résoudre des énigmes complexes avant que le temps ne soit écoulé. L'atmosphère est immersive, avec des lumières tamisées, des écrans futuristes, et des bruits de fond rappelant le vide de l'espace. Les joueurs se retrouvent dans un décor de haute technologie, où chaque compartiment cache des secrets et des indices cruciaux. L’urgence de la mission est renforcée par des alertes de sécurité et une course contre la montre pour éviter une catastrophe qui pourrait mettre en péril l’humanité tout entière."
+    },
+    {
+      "imgFond": "https://cdn.futura-sciences.com/sources/XMM-Newton_ESA_D._Ducros_.jpg",
+      "nomHero": "Mystère du manoir",
+      "descHero" : "Dans cet escape game, les joueurs sont invités à résoudre une mystérieuse affaire se déroulant dans un manoir ancien et imposant, caché au cœur d'une forêt brumeuse. En tant que détectives, ils doivent enquêter sur la disparition étrange du maître des lieux, un aristocrate réputé pour ses secrets et ses affaires peu claires. Le manoir, avec ses couloirs sombres, ses pièces en décomposition et son mobilier d’époque, regorge d’indices cachés dans des livres anciens, des tableaux énigmatiques et des objets précieux. Les joueurs devront décrypter des lettres codées, résoudre des puzzles historiques et éviter les pièges dissimulés dans cette demeure hantée par son passé. L'ambiance est lugubre et pleine de suspense, avec des sons effrayants et une lumière tamisée qui accentue le mystère. Au fur et à mesure de l’enquête, une toile de mensonges et de trahisons se dévoile, et les joueurs devront démêler la vérité avant que le temps ne soit écoulé et que le manoir n’engloutisse à jamais ses secrets."
+    }
   ]
+  
 }

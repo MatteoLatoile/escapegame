@@ -1,18 +1,18 @@
 // on donne l'url du site a appeller
 fetch('data.json')
-.then ((rep)=>{
-    return rep.json()
+    .then((rep) => {
+        return rep.json()
 
-})
-.then (donnee=>{
-    console.log(donnee.activites);
-   afficher(donnee.activites)
-   afficher2(donnee.temoignages)
-})
+    })
+    .then(donnee => {
+        console.log(donnee.activites);
+        afficher(donnee.activites)
+        afficher2(donnee.temoignages)
+    })
 //role : afficher
 // parametre
 //retour
-function afficher(activite){
+function afficher(activite) {
     activite.forEach(act => {
         let nom = act.nom
         let desc = act.description
@@ -22,37 +22,51 @@ function afficher(activite){
                 <div>
                     <h3>${nom}</h3>
                     <p>${desc}</p>
-                    <a href="">Réservez !</a>
+                    <a href="aventure.html" target="_blank">Réservez !</a>
                 </div>
             </div>`
-            let affichage = document.querySelector("#containerCard")
-            affichage.innerHTML += template1
+        let affichage = document.querySelector("#containerCard")
+        affichage.innerHTML += template1
 
     });
 }
 
 
-function afficher2(temoignage){
+function afficher2(temoignage) {
     temoignage.forEach(tem => {
         let prenom = tem.prenom
         let titreXP = tem.typeExperience
         let com = tem.commentaire
         let rate = tem.note
+        let etoilePleine = "★"
+        let etoileVide = "☆"
+        let rateEtoile = etoilePleine.repeat(rate)
+        let rateEtoileV = etoileVide.repeat(5-rate)
 
         let templateAvis = `<div class="cardAvis marginAvis">
                 <div class="flex alignItem">
                     <img src="assets/avis_photo.jpg" alt="">
                     <div class="width45">
                         <h5>${prenom}</h5>
-                        <p>${rate}</p>
+                        <p>${rateEtoile}${rateEtoileV}</p>
                     </div>
                 </div>
                 <h5>${titreXP}</h5>
                 <p>${com}</p>
             </div>`
+            /*il faut que mon nombre sur 5 dans chaque avis ce traduise en étoile selon le nombre sur et le nombre d'étoile manquant
+devient une etoile vide je crée donc 2 boites qui va contenir mes étoile vide et remplisle nombre d'etoile plaine correspondra a ma not et le nombre d'etoile vide sera le resultat de ma note (donc le nombre d'etoile) moins 5 (qui me donnera donc le nombre d'etoile vide)  */
 
-            let affichageAvis = document.querySelector("#containerAvis")
-            affichageAvis.innerHTML += templateAvis
+        
+
+        let affichageAvis = document.querySelector("#containerAvis")
+        affichageAvis.innerHTML += templateAvis
     });
-    
+
 }
+
+
+/*il faut que mon nombre sur 5 dans chaque avis ce traduise en étoile selon le nombre sur et le nombre d'étoile manquant
+devient une etoile vide je crée donc 2 boites qui va contenir mes étoile vide et remplisle nombre d'etoile plaine correspondra a ma not et le nombre d'etoile vide sera le resultat de ma note (donc le nombre d'etoile) moins 5 (qui me donnera donc le nombre d'etoile vide)  */
+
+
